@@ -21,9 +21,9 @@ var currentLine = (line) => {
     var response = "The line is currently: "
     for (let i = 0; i < line.length; i++) {
       if (i === line.length - 1) {
-        response = response + (i + 1) + ". " + line[i]
+        response = `${response} ${i + 1}. ${line[i]}`
       } else {
-        response = response + (i + 1) + ". " + line[i] + ", "
+        response = `${response} ${i + 1}. ${line[i]}, `
       }
     }
     return response
