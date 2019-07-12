@@ -23,7 +23,7 @@ var currentLine = (line) => {
       if (i === line.length - 1) {
         response = `${response} ${i + 1}. ${line[i]}`
       } else {
-        response = `${response} ${i + 1}. ${line[i]}, `
+        response = `${response} ${i + 1}. ${line[i]},`
       }
     }
     return response
